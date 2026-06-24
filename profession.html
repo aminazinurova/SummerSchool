@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Веб-разработчик</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a2e;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #2563eb;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      border-left: 4px solid #2563eb;
+    }
+
+    .card h3 {
+      color: #2563eb;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+      font-style: italic;
+      padding: 2rem;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .quote span {
+      color: #2563eb;
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Веб-разработчик</h1>
+    <p class="description">
+      Человек, который превращает идеи в интерактивные цифровые продукты.
+      Создаёт сайты, приложения и сервисы, которыми пользуются миллионы людей каждый день.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Зарплата</h3>
+        <p>От 80 000 ₽ до 300 000+ ₽ в месяц — в зависимости от опыта и специализации</p>
+      </div>
+      <div class="card">
+        <h3>Перспективы</h3>
+        <p>Рынок растёт каждый год. Удалённая работа, фриланс, собственные продукты — выбор за тобой</p>
+      </div>
+      <div class="card">
+        <h3>Что нужно знать</h3>
+        <p>HTML, CSS, JavaScript, один из фреймворков и умение гуглить быстрее, чем писать</p>
+      </div>
+    </div>
+
+    <div class="quote">
+      «Код — это поэзия логики.» <span>— Джефф Атвуд</span>
+    </div>
+  </div>
+</body>
+</html>
